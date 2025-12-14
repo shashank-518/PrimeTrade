@@ -7,7 +7,7 @@ export default function Login() {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
 
-  const navigate =  useNavigate()
+  const navigate = useNavigate()
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -38,10 +38,10 @@ export default function Login() {
 
   return (
     <div
-      className="min-h-screen flex items-center justify-center bg-cover bg-center"
+      className="min-h-screen flex items-center justify-center bg-cover bg-center p-4" // Added p-4 for padding on small screens
       style={{ backgroundImage: "url('/STock.jpg')" }}
     >
-      <div className="bg-black/70 backdrop-blur-md rounded-2xl shadow-2xl w-full max-w-md p-8 text-white">
+      <div className="bg-black/70 backdrop-blur-md rounded-2xl shadow-2xl w-full max-w-sm sm:max-w-md p-6 sm:p-8 text-white"> {/* Adjusted max-w and padding */}
         <h2 className="text-3xl font-bold text-center mb-6">Welcome Back</h2>
 
         {error && (
@@ -70,12 +70,12 @@ export default function Login() {
           <button
             type="submit"
             className="w-full py-3 rounded-lg 
-               bg-transparent 
-               border-2 border-white 
-               text-white 
-               font-semibold 
-               hover:bg-white hover:text-green-600 
-               transition duration-300"
+                bg-transparent 
+                border-2 border-white 
+                text-white 
+                font-semibold 
+                hover:bg-white hover:text-green-600 
+                transition duration-300"
           >
             Login
           </button>

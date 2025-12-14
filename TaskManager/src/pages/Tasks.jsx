@@ -153,8 +153,9 @@ export default function Tasks() {
     <div className="flex bg-gray-50 dark:bg-gray-900 min-h-screen">
       <Sidebar />
 
-      <div className="flex-1 p-4 md:p-8 lg:p-12 max-w-4xl mx-auto">
-        <h2 className="text-4xl font-extrabold mb-8 text-gray-900 dark:text-gray-100">
+      
+      <div className="flex-1 p-4 md:p-8 lg:p-12 max-w-4xl mx-auto mt-16 md:mt-0"> 
+        <h2 className="text-4xl font-extrabold mb-8 text-gray-900 dark:text-gray-100 text-center">
           Task Manager
         </h2>
 
